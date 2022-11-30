@@ -57,7 +57,7 @@ metadata:
   labels:
     app: words-api
 spec:
-  replicas: 5
+  replicas: 6
   selector:
     matchLabels:
       app: words-api
@@ -81,7 +81,7 @@ metadata:
     app: words-web
 spec:
   ports:
-    - port: 8081
+    - port: 80
       targetPort: 80
       name: web
   selector:
